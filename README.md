@@ -1,12 +1,8 @@
-# Reactjs
-## VS Code Reactjs snippets
+# React.js + Flow
+## VS Code React.js with Flow snippets
 -------------------
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/xabikos.ReactSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/xabikos.ReactSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating/xabikos.ReactSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
-
-This extension contains code snippets for [Reactjs][react] and is based on the awesome [babel-sublime-snippets][babelsublime] package.
+This extension contains code snippets for [React.js][react] with [Flow Type](https://flow.org/en/) support and is based on [Xabiko's](https://github.com/xabikos/vscode-react) existing un-typed snippets extension
 
 ## Installation
 
@@ -15,25 +11,7 @@ There you have either the option to show the already installed snippets or insta
 
 ## Supported languages (file extensions)
 * JavaScript (.js)
-* TypeScript (.ts)
 * JavaScript React (.jsx)
-* TypeScript React (.tsx)
-
-## Breaking change in version 2.0.0
-Removed support for jsx language as it was giving errors in developer tools [#39](https://github.com/xabikos/vscode-react/issues/39)
-
-## Breaking change in version 1.0.0
-Up until verion 1.0.0 all the [JavaScript snippets][javacript] where part of the extension. In order to avoid duplication
-the snippets are now included only to this extension and if you want to use them you have to install it explicitly.
-
-## Usage
-When installing the extension React development could be really fun
-![create react component](images/component.gif)
-
-As VS Code from version 0.10.10 supports React components syntax inside js files the snippets are available for JavaScript language as well.
-In the following example you can see the usage of a React stateless component with prop types snippets inside a js and not jsx file.
-![create react stateless component](images/stateless.gif)
-
 
 ## Snippets
 

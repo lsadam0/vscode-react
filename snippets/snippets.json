@@ -17,39 +17,33 @@
     "description": "Creates a React component class with ES6 module system"
   },
 
-  "reactClassComponentPropTypes": {
-    "prefix": "rccp",
-    "body": "// @flow strict\n\nimport * as React from 'react';\nimport PropTypes from 'prop-types';\n\ntype Props = {};\n\nclass ${1:${TM_FILENAME_BASE}} extends React.Component<Props> {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
-    "description": "Creates a React component class with PropTypes and ES6 module system"
-  },
-
   "reactClassComponentWithMethods": {
     "prefix": "rcfc",
-    "body": "// @flow strict\n\nimport * as React from 'react';\nimport PropTypes from 'prop-types';\n\ntype Props = {};\n\nclass ${1:${TM_FILENAME_BASE}} extends React.Component<Props> {\n\tconstructor(props: Props) {\n\t\tsuper(props);\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps: Props) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps: Props, nextState) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps: Props, nextState) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps: Props, prevState) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
-    "description": "Creates a React component class with PropTypes and all lifecycle methods and ES6 module system"
+    "body": "// @flow strict\n\nimport * as React from 'react';\n\ntype Props = {};\n\nclass ${1:${TM_FILENAME_BASE}} extends React.Component<Props> {\n\tconstructor(props: Props) {\n\t\tsuper(props);\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps: Props) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps: Props, nextState: ${2:${TM_STATE_TYPE}}) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps: Props, nextState: ${2:${TM_STATE_TYPE}}) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps: Props, prevState: ${2:${TM_STATE_TYPE}}) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a React component class with all lifecycle methods and ES6 module system"
   },
 
   "reactWithWebpackDefaults": {
     "prefix": "rwwd",
-    "body": "type Props = {};\n\nclass ${1:${TM_FILENAME_BASE}} extends React.Component<Props> {\n\tconstructor(props: Props) {\n\t\tsuper(props);\n\n\t\tthis.state = {};\n\n\t}\n\n\trender() {\n\t\treturn(\n\t\t\t<div>\n\n\t\t\t$0</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
-    "description": "Creates a React component class with constructor, empty state, proptypes and export in ES6 module system without imports. (Mostly used when React, Proptypes are provided by webpack provide plugin)"
+    "body": "type Props = {};\n\nclass ${1:${TM_FILENAME_BASE}} extends React.Component<Props> {\n\tconstructor(props: Props) {\n\t\tsuper(props);\n\n\t\tthis.state = {};\n\n\t}\n\n\trender() {\n\t\treturn(\n\t\t\t<div>\n\n\t\t\t$0</div>\n\t\t);\n\t}\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a React component class with constructor, empty state, and export in ES6 module system without imports. (Mostly used when React"
   },
 
   "reactPureComponent": {
     "prefix": "rpc",
-    "body": "// @flow strict\n\nimport * as React from 'react';\nimport PropTypes from 'prop-types';\n\ntype Props = {};\n\nclass ${1:${TM_FILENAME_BASE}} extends React.PureComponent<Props> {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
-    "description": "Creates a React pure component class with PropTypes and ES6 module system"
+    "body": "// @flow strict\n\nimport * as React from 'react';\n\ntype Props = {};\n\nclass ${1:${TM_FILENAME_BASE}} extends React.PureComponent<Props> {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a React pure component class ES6 module system"
   },
 
   "reactStateless": {
     "prefix": "rsc",
     "body": "// @flow strict\n\nimport * as React from 'react';\n\nconst ${1:${TM_FILENAME_BASE}} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
-    "description": "Creates a stateless React component without PropTypes and ES6 module system"
+    "description": "Creates a stateless React component ES6 module system"
   },
   "reactStatelessProps": {
     "prefix": "rscp",
-    "body": "// @flow strict\n\nimport * as React from 'react';\nimport PropTypes from 'prop-types';\n\ntype Props = {};\n\nconst ${1:${TM_FILENAME_BASE}} = (props: Props) => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
-    "description": "Creates a stateless React component with PropTypes and ES6 module system"
+    "body": "// @flow strict\n\nimport * as React from 'react';\ntype Props = {};\n\nconst ${1:${TM_FILENAME_BASE}} = (props: Props) => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a stateless React component ES6 module system"
   },
 
   "classConstructor": {
@@ -101,7 +95,7 @@
 
   "componentDidUpdate": {
     "prefix": "cdup",
-    "body": "componentDidUpdate(prevProps: ${1:${TM_PROPS_TYPE}}, prevState: ${1:${TM_STATE_TYPE}}) {\n\t$0\n}\n",
+    "body": "componentDidUpdate(prevProps: ${1:${TM_PROPS_TYPE}}, prevState: ${2:${TM_STATE_TYPE}}) {\n\t$0\n}\n",
     "description": "Invoked immediately after the component's updates are flushed to the DOM."
   },
 

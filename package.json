@@ -1,7 +1,7 @@
 {
   "name": "ReactFlowSnippets",
   "description": "Code snippets for React.js development with Flow Type support in ES6 syntax",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "displayName": "React.js with Flow Types code snippets",
   "publisher": "lsadam0",
   "icon": "images/react.png",

@@ -1,4 +1,6 @@
 # Change Log
 
-This project adheres to [Semantic Versioning](http://semver.org/).  
-Every release, along with the migration instructions, is documented on the Github [Releases](https://github.com/xabikos/vscode-react/releases) page.
+### 0.2.0
+
+- Update lifecycle method snippets to prompt user for Props & State type
+- Correctly populate Props & State types for Component snippets

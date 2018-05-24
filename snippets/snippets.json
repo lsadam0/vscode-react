@@ -25,13 +25,13 @@
 
   "reactClassComponentWithMethods": {
     "prefix": "rcfc",
-    "body": "// @flow strict\n\nimport * as React from 'react';\nimport PropTypes from 'prop-types';\n\ntype Props = {};\n\nclass ${1:${TM_FILENAME_BASE}} extends React.Component<Props> {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "body": "// @flow strict\n\nimport * as React from 'react';\nimport PropTypes from 'prop-types';\n\ntype Props = {};\n\nclass ${1:${TM_FILENAME_BASE}} extends React.Component<Props> {\n\tconstructor(props: Props) {\n\t\tsuper(props);\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps: Props) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps: Props, nextState) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps: Props, nextState) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps: Props, prevState) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a React component class with PropTypes and all lifecycle methods and ES6 module system"
   },
 
   "reactWithWebpackDefaults": {
     "prefix": "rwwd",
-    "body": "type Props = {};\n\nclass ${1:${TM_FILENAME_BASE}} extends React.Component<Props> {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t\tthis.state = {};\n\n\t}\n\n\trender() {\n\t\treturn(\n\t\t\t<div>\n\n\t\t\t$0</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "body": "type Props = {};\n\nclass ${1:${TM_FILENAME_BASE}} extends React.Component<Props> {\n\tconstructor(props: Props) {\n\t\tsuper(props);\n\n\t\tthis.state = {};\n\n\t}\n\n\trender() {\n\t\treturn(\n\t\t\t<div>\n\n\t\t\t$0</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a React component class with constructor, empty state, proptypes and export in ES6 module system without imports. (Mostly used when React, Proptypes are provided by webpack provide plugin)"
   },
 
@@ -83,25 +83,25 @@
 
   "componentWillReceiveProps": {
     "prefix": "cwr",
-    "body": "componentWillReceiveProps(nextProps: Props) {\n\t$0\n}\n",
+    "body": "componentWillReceiveProps(nextProps: ${1:${TM_PROPS_TYPE}}) {\n\t$0\n}\n",
     "description": "Invoked when a component is receiving new props. This method is not called for the initial render. [DEPRECATION NOTE]: This method is deprecated in React 16.3"
   },
 
   "shouldComponentUpdate": {
     "prefix": "scu",
-    "body": "shouldComponentUpdate(nextProps: Props, nextState: State) {\n\t$0\n}\n",
+    "body": "shouldComponentUpdate(nextProps: ${1:${TM_PROPS_TYPE}}, nextState: ${2:${TM_STATE_TYPE}}) {\n\t$0\n}\n",
     "description": "Invoked before rendering when new props or state are being received. "
   },
 
   "componentWillUpdate": {
     "prefix": "cwup",
-    "body": "componentWillUpdate(nextProps: Props, nextState: State) {\n\t$0\n}\n",
+    "body": "componentWillUpdate(nextProps: ${1:${TM_PROPS_TYPE}}, nextState: ${2:${TM_STATE_TYPE}}) {\n\t$0\n}\n",
     "description": "Invoked immediately before rendering when new props or state are being received. [DEPRECATION NOTE]: This method is deprecated in React 16.3"
   },
 
   "componentDidUpdate": {
     "prefix": "cdup",
-    "body": "componentDidUpdate(prevProps: Props, prevState: State) {\n\t$0\n}\n",
+    "body": "componentDidUpdate(prevProps: ${1:${TM_PROPS_TYPE}}, prevState: ${1:${TM_STATE_TYPE}}) {\n\t$0\n}\n",
     "description": "Invoked immediately after the component's updates are flushed to the DOM."
   },
 
@@ -125,7 +125,7 @@
 
   "componentSetStateFunc": {
     "prefix": "ssf",
-    "body": "this.setState((state: State, props: Props) => { return { $0 }});\n",
+    "body": "this.setState((state: ${1:${TM_STATE_TYPE}}, props: ${2:${TM_PROPS_TYPE}}) => { return { $0 }});\n",
     "description": "Performs a shallow merge of nextState into current state"
   },
 
@@ -311,12 +311,12 @@
   },
   "getSnapshotBeforeUpdate": {
     "prefix": "gsbu",
-    "body": "getSnapshotBeforeUpdate(prevProps: Props, prevState: State) {\n\t$0\n}\n",
+    "body": "getSnapshotBeforeUpdate(prevProps: ${1:${TM_PROPS_TYPE}}, prevState: ${2:${TM_STATE_TYPE}}) {\n\t$0\n}\n",
     "description": "Invoked right before the most recently rendered output is committed to e.g. the DOM. It enables your component to capture current values"
   },
   "getDerivedStateFromProps": {
     "prefix": "gdsfp",
-    "body": "static getDerivedStateFromProps(nextProps: Props, prevState: State) {\n\t$0\n}\n",
+    "body": "static getDerivedStateFromProps(nextProps: ${1:${TM_PROPS_TYPE}}, prevState: ${2:${TM_STATE_TYPE}}) {\n\t$0\n}\n",
     "description": "Invoked after a component is instantiated as well as when it receives new props."
   },
   "componentDidCatch": {

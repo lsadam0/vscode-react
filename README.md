@@ -2,6 +2,9 @@
 ## VS Code React.js with Flow snippets
 -------------------
 
+[![Version](https://vsmarketplacebadge.apphb.com/version/lsadam0.ReactFlowSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=lsadam0.ReactFlowSnippets)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/lsadam0.ReactFlowSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=lsadam0.ReactFlowSnippets)
+
 This extension contains code snippets for [React.js][react] with [Flow Type](https://flow.org/en/) support and is based on [Xabiko's](https://github.com/xabikos/vscode-react) existing un-typed snippets extension
 
 ## Installation

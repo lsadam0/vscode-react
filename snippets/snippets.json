@@ -25,7 +25,7 @@
 
   "reactWithWebpackDefaults": {
     "prefix": "rwwd",
-    "body": "type Props = {||};\n\nclass ${1:${TM_FILENAME_BASE}} extends React.Component<Props> {\n\tconstructor(props: Props) {\n\t\tsuper(props);\n\n\t\tthis.state = {};\n\n\t}\n\n\trender() {\n\t\treturn(\n\t\t\t<div>\n\n\t\t\t$0</div>\n\t\t);\n\t}\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "body": "type Props = {||};\n\nclass ${1:${TM_FILENAME_BASE}} extends React.Component<Props> {\n\trender() {\n\t\treturn(\n\t\t\t<div>\n\n\t\t\t$0</div>\n\t\t);\n\t}\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a React component class with constructor, empty state, and export in ES6 module system without imports. (Mostly used when React"
   },
 
@@ -59,7 +59,7 @@
 
   "emptyState": {
     "prefix": "est",
-    "body": "this.state = {\n\t$1\n};",
+    "body": "this.state = {|\n\t$1\n|};",
     "description": "Creates empty state object. To be used in a constructor."
   },
 

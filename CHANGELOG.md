@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.2.17
+* `rdp` => `static defaultProps = { }`
+* `rpt` => `static propTypes = { }`
+
 ### 0.2.16
 * `rwwd` should not have a constructor, nor initialize state
 * `est` empty state type is now an exact type

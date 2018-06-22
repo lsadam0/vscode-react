@@ -143,13 +143,13 @@
 
   "propTypes": {
     "prefix": "rpt",
-    "body": "$1.propTypes = {\n\t$2\n};",
+    "body": "static propTypes = {\n\t$2\n};",
     "description": "Creates empty propTypes declaration"
   },
 
   "defaultProps": {
     "prefix": "rdp",
-    "body": "$1.defaultProps = {\n\t$2\n};",
+    "body": "static defaultProps = {\n\t$2\n};",
     "description": "Creates empty defaultProps declaration"
   },
 
